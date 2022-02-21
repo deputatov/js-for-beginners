@@ -35,8 +35,12 @@ function getNumber () {
   let num;
 
   do {
-    num = +prompt("Введите валидное число", '')
-  } while (Number.isNaN(num))
+    num = prompt("Введите валидное число", 0)
+  } while (!isFinite(num));
+
+  if (num === null || num === '') return null;
+
+  return +num;
 }
 
 const validator = num => num > 18
@@ -45,6 +49,6 @@ function getNumberWithValidator (validator) {
   let num;
 
   do {
-    num = +prompt("Введите валидное число", '')
+    num = +prompt("Введите валидное число", 0)
   } while (validator(num))
 }
