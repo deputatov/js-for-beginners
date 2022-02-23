@@ -57,3 +57,7 @@ function clone(obj) {
 
   return result
 }
+
+function clone_2(obj) {
+  return { ...obj };
+}
