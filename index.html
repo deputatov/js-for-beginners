@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    #circle {
+      transition: all 2s;
+      position: absolute;
+      background-color: red;
+      border-radius: 50%;
+      left: 20px;
+      top: 60px;
+      width: 50px;
+      height: 50px
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="doAnimation()">"doAnimation"</button>
+  <button onclick="doAnimationWithCallback()">"doAnimationWithCallback"</button>
+  <button onclick="doAnimationZoom()">"doAnimationZoom"</button>
+  <button onclick="doAnimationWithSequenceOfCallbacks()">"doAnimationWithSequenceOfCallbacks"</button>
+  <button onclick="doAnimationWithSequenceOfPromises()">"doAnimationWithSequenceOfPromises"</button>
+  <button onclick="doAnimationWithSequenceOfPromisesWithDelay()">"doAnimationWithSequenceOfPromisesWithDelay"</button>
+
+  <div id="circle"></div>
+  <script src="./index.js"></script>
+
+</body>
+</html>
