@@ -1,3 +1,5 @@
+'use strict'
+
 const calculator = {
   init(lval, rval) {
     this.lval = lval;
