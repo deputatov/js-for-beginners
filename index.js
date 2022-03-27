@@ -1,3 +1,5 @@
+'use strict'
+
 const bind =
   (func, context, ...argsBound) =>
   (...args) =>
