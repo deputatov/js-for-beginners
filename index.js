@@ -1,3 +1,5 @@
+'use strict'
+
 const fio = 'Леонтьев Сергей Дмитриевич';
 
 function getInitials(fio) {
