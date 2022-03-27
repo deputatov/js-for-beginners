@@ -1,3 +1,5 @@
+'use strict'
+
 const circleEl = document.getElementById('circle')
 
 function doAnimation() {
