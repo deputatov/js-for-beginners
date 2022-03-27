@@ -1,3 +1,5 @@
+'use strict'
+
 function exercise_1() {
   let i = 3;
   while (i) {
